@@ -14,4 +14,5 @@ Designed and verified a parameterized **Synchronous FIFO** memory buffer in Veri
 synchronous-fifo/
 ├── rtl/        # Design source file(fifo.v)
 ├── tb/         # Testbench source files (tb_fifo.v)
+├── docs/       # Block diagram and waveform screenshots
 └── README.md   # Project documentation
