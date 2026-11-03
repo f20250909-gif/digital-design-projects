@@ -1,0 +1,18 @@
+# 3-Stage Pipelined Multiply-Accumulate (MAC) Unit
+
+## Overview
+Designed and verified a **3-Stage Pipelined MAC Unit** (`OUT = ACC + (A * B)`) in Verilog HDL using **Xilinx Vivado (XSIM)**. The design splits multiplication and accumulation across three pipeline stages to achieve high operational frequency.
+
+## Key Features
+- **Pipelined Execution:** 3 sequential stages for operand register, multiplier, and accumulator.
+- **High Throughput:** 1 output per clock cycle after an initial 3-cycle latency.
+- **Synchronous Reset:** Active-high reset (`rst`) to clear pipeline registers and accumulator state synchronously on the clock edge.
+- **Verification:** Verified with test vectors in Vivado Simulator (XSIM).
+
+## Repository Layout
+```text
+pipelined-mac/
+├── rtl/        # Design source files (mac.v)
+├── tb/         # Testbench source files (mac_unit_tb.v)
+├── docs/       # Architecture diagram and waveform screenshots
+└── README.md   # Project documentation
